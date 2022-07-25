@@ -16,7 +16,7 @@ const Player = () => {
         song.volume = +volume;
     }, [volume, song]);
     return (
-        <div className='flex items-center absolute right-1/3 top-1/2 -translate-y-1/2 space-x-2'>
+        <div className='flex items-center absolute right-1/3 top-1/2 z-50 -translate-y-1/2 space-x-2'>
             {!isPlaying ? (
                 <FaPlay
                     className='text-orange_dofus text-2xl cursor-pointer'
