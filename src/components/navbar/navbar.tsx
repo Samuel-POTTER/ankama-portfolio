@@ -4,7 +4,7 @@ import Reunion from 'assets/reunion.png';
 import Me from 'assets/samuel.potter.jpg';
 import { ModalProps } from 'components/modal/modal';
 
-const Navbar = ({ setShowModal }: ModalProps) => {
+const Navbar = ({ setShowModal, setScrollTop }: ModalProps) => {
     return (
         <nav className='bg-black h-28 z-50 fixed w-full'>
             <div className='mx-40 flex justify-end items-center space-x-2'>
@@ -23,13 +23,22 @@ const Navbar = ({ setShowModal }: ModalProps) => {
                 />
             </div>
             <ul className='mx-40 uppercase text-white font-bold flex items-center justify-between mt-5'>
-                <li className='cursor-pointer hover:text-green_dofus transition duration-150 delay-75 ease-in-out'>
+                <li
+                    onClick={() => setScrollTop && setScrollTop('first')}
+                    className='cursor-pointer hover:text-green_dofus transition duration-150 delay-75 ease-in-out'
+                >
                     dofus une histoire d'amour
                 </li>
-                <li className='cursor-pointer hover:text-green_dofus transition duration-150 delay-75 ease-in-out'>
+                <li
+                    onClick={() => setScrollTop && setScrollTop('second')}
+                    className='cursor-pointer hover:text-green_dofus transition duration-150 delay-75 ease-in-out'
+                >
                     parcours
                 </li>
-                <li className='cursor-pointer hover:text-green_dofus transition duration-150 delay-75 ease-in-out'>
+                <li
+                    onClick={() => setScrollTop && setScrollTop('third')}
+                    className='cursor-pointer hover:text-green_dofus transition duration-150 delay-75 ease-in-out'
+                >
                     le projet: road to ankama
                 </li>
                 <li

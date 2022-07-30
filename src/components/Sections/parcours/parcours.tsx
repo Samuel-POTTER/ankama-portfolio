@@ -1,8 +1,10 @@
 import Turtle from 'assets/bg-news.png';
+import React from 'react';
 
-const Parcours = () => {
+const Parcours = React.forwardRef<HTMLElement>((props, ref) => {
     return (
         <section
+            ref={ref}
             className='h-full bg-no-repeat bg-right-bottom bg-cover relative pt-40 px-16'
             style={{ backgroundImage: `url(${Turtle})` }}
         >
@@ -28,6 +30,6 @@ const Parcours = () => {
             </div>
         </section>
     );
-};
+});
 
 export default Parcours;

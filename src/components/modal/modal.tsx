@@ -1,15 +1,22 @@
 import ModalImg from 'assets/card.png';
 
+import { motion } from 'framer-motion';
 import { AiFillMail } from 'react-icons/ai';
 import { BsTelephoneFill } from 'react-icons/bs';
 
 export type ModalProps = {
     setShowModal: (showModal: boolean) => void;
+    setScrollTop?: React.Dispatch<React.SetStateAction<string>>;
 };
 
 const Modal = ({ setShowModal }: ModalProps) => {
     return (
-        <div onClick={() => setShowModal(false)} className='fixed h-screen w-screen bg-black/50 z-50'>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            onClick={() => setShowModal(false)}
+            className='fixed h-screen w-screen bg-black/50 z-50'
+        >
             <img
                 src={ModalImg}
                 alt='modal contact'
@@ -25,7 +32,7 @@ const Modal = ({ setShowModal }: ModalProps) => {
                     <p className='text-primary_dofus font-bold'>0692 33 03 06</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

@@ -1,11 +1,12 @@
-import AllMember from 'assets/bg2.jpg';
+import Dofus from 'assets/video.mp4';
+import React from 'react';
 
-const Project = () => {
+const Project = React.forwardRef<HTMLElement>((props, ref) => {
     return (
-        <section
-            className='h-full bg-no-repeat bg-right bg-cover relative pt-40 px-16'
-            style={{ backgroundImage: `url(${AllMember})` }}
-        >
+        <section ref={ref} className='relative'>
+            <video autoPlay loop muted>
+                <source src={Dofus} type='video/mp4' />
+            </video>
             <h1 className='text-primary_dofus uppercase text-7xl absolute right-20 top-1/4 font-bebas'>
                 road to ankama
             </h1>
@@ -30,6 +31,6 @@ const Project = () => {
             </p>
         </section>
     );
-};
+});
 
 export default Project;

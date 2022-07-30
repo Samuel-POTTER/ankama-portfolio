@@ -17,3 +17,6 @@ declare module '*.mp4' {
 declare module '*.mp3' {
     export default '' as string;
 }
+declare module '*.pdf' {
+    export default '' as string;
+}
