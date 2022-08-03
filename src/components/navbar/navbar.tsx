@@ -3,6 +3,24 @@ import Logo from 'assets/logopotter.png';
 import Reunion from 'assets/reunion.png';
 import Me from 'assets/samuel.potter.jpg';
 import { ModalProps } from 'components/modal/modal';
+import { motion } from 'framer-motion';
+
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.5
+        }
+    }
+};
+
+const item = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1
+    }
+};
 
 const Navbar = ({ setShowModal, setScrollTop }: ModalProps) => {
     return (
@@ -22,32 +40,41 @@ const Navbar = ({ setShowModal, setScrollTop }: ModalProps) => {
                     className='absolute w-32 left-1/2 -translate-x-1/2 -translate-y-7'
                 />
             </div>
-            <ul className='mx-40 uppercase text-white font-bold flex items-center justify-between mt-5'>
-                <li
+            <motion.ul
+                variants={container}
+                initial='hidden'
+                animate='show'
+                className='mx-40 uppercase text-white font-bold flex items-center justify-between mt-5'
+            >
+                <motion.li
+                    variants={item}
                     onClick={() => setScrollTop && setScrollTop('first')}
                     className='cursor-pointer hover:text-green_dofus transition duration-150 delay-75 ease-in-out'
                 >
                     dofus une histoire d'amour
-                </li>
-                <li
+                </motion.li>
+                <motion.li
+                    variants={item}
                     onClick={() => setScrollTop && setScrollTop('second')}
                     className='cursor-pointer hover:text-green_dofus transition duration-150 delay-75 ease-in-out'
                 >
                     parcours
-                </li>
-                <li
+                </motion.li>
+                <motion.li
+                    variants={item}
                     onClick={() => setScrollTop && setScrollTop('third')}
                     className='cursor-pointer hover:text-green_dofus transition duration-150 delay-75 ease-in-out'
                 >
                     le projet: road to ankama
-                </li>
-                <li
+                </motion.li>
+                <motion.li
+                    variants={item}
                     onClick={() => setShowModal(true)}
                     className='cursor-pointer hover:text-green_dofus transition duration-150 delay-75 ease-in-out'
                 >
                     contacts
-                </li>
-            </ul>
+                </motion.li>
+            </motion.ul>
         </nav>
     );
 };
