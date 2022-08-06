@@ -10,7 +10,7 @@ const Project = React.forwardRef<HTMLElement>((props, ref) => {
             <h1 className='text-primary_dofus uppercase text-7xl absolute right-20 top-1/4 font-bebas'>
                 road to ankama
             </h1>
-            <p className='font-bebas uppercase text-white text-2xl w-1/3 text-right absolute right-20 top-1/2'>
+            <p style={{textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"}} className='font-bebas uppercase text-white text-2xl w-1/3 text-right absolute right-20 top-1/2 stroke-black'>
                 Qu'est ce que le
                 <span className='text-orange_dofus'> projet road to ankama </span>? Il s'agit de mon objectif
                 <span className='text-orange_dofus'> personnel </span>
