@@ -25,9 +25,9 @@ const item = {
 const Navbar = ({ setShowModal, setScrollTop }: ModalProps) => {
     return (
         <nav className='bg-black h-28 z-50 fixed w-full'>
-            <div className='mx-40 flex justify-end items-center space-x-2'>
+            <div className='md:mx-40 mx-2 flex justify-end items-center space-x-2'>
                 <img src={IopHead} alt='iop head' />
-                <h4 className='uppercase font-bold text-white'>samuel potter</h4>
+                <h4 className='uppercase font-bold hidden md:block text-white'>samuel potter</h4>
                 <img src={Me} alt='drapeau ile de la réunion' className='w-8' />
                 <img src={Reunion} alt='drapeau ile de la réunion' className='w-8' />
             </div>
@@ -44,7 +44,7 @@ const Navbar = ({ setShowModal, setScrollTop }: ModalProps) => {
                 variants={container}
                 initial='hidden'
                 animate='show'
-                className='mx-40 uppercase text-white font-bold flex items-center justify-between mt-5'
+                className='mx-40 uppercase text-white font-bold hidden md:flex items-center justify-between mt-5'
             >
                 <motion.li
                     variants={item}

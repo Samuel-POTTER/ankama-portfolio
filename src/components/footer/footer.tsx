@@ -16,7 +16,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className='fixed w-full bottom-0 h-24 z-50 flex items-center justify-center bg-black/30'>
+        <footer className='fixed w-full bottom-0 h-24 z-50 hidden md:flex items-center justify-center bg-black/30'>
             <motion.img
                 initial={{ y: -1000 }}
                 animate={{ y: -30 }}

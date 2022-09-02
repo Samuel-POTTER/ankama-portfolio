@@ -39,10 +39,10 @@ const Selector = () => {
         }
     };
     return (
-        <>
+        <div className='hidden md:block'>
             <svg
                 onClick={() => changeCharacter(false)}
-                className='fill-orange_dofus cursor-pointer translate-y-5 w-10 absolute right-1/2 -translate-x-20 bottom-1/3 rotate-180'
+                className='fill-orange_dofus cursor-pointer translate-y-24 md:translate-y-5 w-10 absolute right-1/2 -translate-x-20 bottom-1/4 md:bottom-1/3 rotate-180'
                 version='1.1'
                 id='Calque_1'
                 xmlns='http://www.w3.org/2000/svg'
@@ -56,13 +56,13 @@ const Selector = () => {
 	c0,2.8-0.6,12.6,3.5,16.7c5.4,5.4,14.8,5.4,20.5,0c6.9-6.9,24.3-24,30.6-30C81.7,54.9,81.7,42.9,74.1,36z'
                 />
             </svg>
-            <div className='absolute left-1/2 -translate-x-1/2 bottom-1/4 flex flex-col justify-center'>
+            <div className='absolute left-1/2 -translate-x-1/2 translate-y-40 md:translate-y-0 bottom-1/4 flex flex-col justify-center'>
                 <img src={character[index].img} alt='barre-lord' className='w-32' />
                 <span className='text-orange_dofus text-center font-semibold'>Barre-{character[index].name}</span>
             </div>
             <svg
                 onClick={() => changeCharacter(true)}
-                className='fill-orange_dofus cursor-pointer translate-y-5 w-10 absolute left-1/2 translate-x-20 bottom-1/3'
+                className='fill-orange_dofus cursor-pointer translate-y-24 md:translate-y-5 w-10 absolute left-1/2 translate-x-20 bottom-1/4 md:bottom-1/3'
                 version='1.1'
                 id='Calque_1'
                 xmlns='http://www.w3.org/2000/svg'
@@ -76,7 +76,7 @@ const Selector = () => {
 	c0,2.8-0.6,12.6,3.5,16.7c5.4,5.4,14.8,5.4,20.5,0c6.9-6.9,24.3-24,30.6-30C81.7,54.9,81.7,42.9,74.1,36z'
                 />
             </svg>
-        </>
+        </div>
     );
 };
 

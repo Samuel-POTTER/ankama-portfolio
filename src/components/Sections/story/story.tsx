@@ -1,6 +1,7 @@
 import Parcho from 'assets/bg.jpg';
 import Selector from 'components/selector';
 import React from 'react';
+import "../../../index.css";
 
 const Story = React.forwardRef<HTMLElement>((props, ref) => {
     return (
@@ -9,7 +10,7 @@ const Story = React.forwardRef<HTMLElement>((props, ref) => {
             className='h-full bg-no-repeat bg-cover relative'
             style={{ backgroundImage: `url(${Parcho})` }}
         >
-            <p className='text-center w-1/3 absolute text-white left-1/2 -translate-x-1/2 top-1/4 -translate-y-16 font-bold'>
+            <p className='text-center md:w-1/3 w-full absolute text-white px-2 md:px-0 left-1/2 -translate-x-1/2 top-1/4 md:-translate-y-16 font-bold text-black-shadow'>
                 Nous sommes en <span className='text-orange_dofus'>2008</span>, en classe de 6ème. En pleine récréation,
                 moi et mes amis étions à la recherche d'un nouveau jeu où nous pourrions nous y retrouver après les
                 cours. Après quelques minutes de réflexion et un tour de table, une connaissance vint nous parler d'un
