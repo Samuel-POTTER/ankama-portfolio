@@ -8,6 +8,7 @@ const Competences = React.forwardRef<HTMLElement>((_, ref) => {
   const [activeTab, setActiveTab] = useState(0);
   const [competences, setCompetences] = useState(competence.skill);
   const [tasks, setTasks] = useState<ITask[]>([]);
+  const [selectedInfos, setSelectedInfos] = useState(-1);
 
   return (
     <section
@@ -25,11 +26,12 @@ const Competences = React.forwardRef<HTMLElement>((_, ref) => {
               setActiveTab(0);
               setCompetences(competence.skill);
               setTasks([]);
+              setSelectedInfos(-1);
             }}
             className={`${
               activeTab === 0
                 ? "text-green_dofus border-b-2 border-green_dofus bg-[#23291e]"
-                : "text-white_dofus"
+                : "text-white_dofus hover:bg-[#23291e]"
             } dofus-text-shadow font-bold w-1/4 hover:cursor-pointer text-center py-2`}
           >
             Succès
@@ -39,11 +41,12 @@ const Competences = React.forwardRef<HTMLElement>((_, ref) => {
               setActiveTab(1);
               setCompetences(competence.experience);
               setTasks([]);
+              setSelectedInfos(-1);
             }}
             className={`${
               activeTab === 1
                 ? "text-green_dofus border-b-2 border-green_dofus bg-[#23291e]"
-                : "text-white_dofus"
+                : "text-white_dofus hover:bg-[#23291e]"
             } dofus-text-shadow font-bold w-1/4 hover:cursor-pointer text-center py-2`}
           >
             Expériences
@@ -53,11 +56,12 @@ const Competences = React.forwardRef<HTMLElement>((_, ref) => {
               setActiveTab(2);
               setCompetences(competence.passion);
               setTasks([]);
+              setSelectedInfos(-1);
             }}
             className={`${
               activeTab === 2
                 ? "text-green_dofus border-b-2 border-green_dofus bg-[#23291e]"
-                : "text-white_dofus"
+                : "text-white_dofus hover:bg-[#23291e]"
             } dofus-text-shadow font-bold w-1/4 hover:cursor-pointer text-center py-2`}
           >
             Passions
@@ -67,9 +71,14 @@ const Competences = React.forwardRef<HTMLElement>((_, ref) => {
           <div className="w-1/3 bg-[#2B3125]">
             {competences.map((success, key) => (
               <button
-                onClick={() => setTasks(success.tasks)}
+                onClick={() => {
+                  setTasks(success.tasks);
+                  setSelectedInfos(key);
+                }}
                 key={key}
-                className="flex items-center justify-between mt-2 px-6 font-semibold w-full text-white_dofus"
+                className={`${
+                  selectedInfos === key ? "bg-[#23291e]" : ""
+                } flex items-center justify-between py-2 px-6 hover:bg-[#23291e] font-semibold w-full text-white_dofus`}
               >
                 <p>{success.name}</p>
                 <span>{success.percentage}%</span>
