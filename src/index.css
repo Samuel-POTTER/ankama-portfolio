@@ -3,67 +3,97 @@
 @tailwind utilities;
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-        'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 #triangle-code {
-    display: inline-block;
-    height: 0;
-    width: 0;
-    border-top: 85px solid #96a702;
-    border-right: 85px solid transparent;
-    border-left: 85px solid transparent;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 85px solid #96a702;
+  border-right: 85px solid transparent;
+  border-left: 85px solid transparent;
+}
+
+.dofus-text-shadow {
+  text-shadow: 1px 2px 2px #000;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    input[type='range'] {
-        overflow: hidden;
-        width: 80px;
-        -webkit-appearance: none;
-        background-color: #9a905d;
-    }
+  input[type="range"] {
+    overflow: hidden;
+    width: 80px;
+    -webkit-appearance: none;
+    background-color: #9a905d;
+  }
 
-    input[type='range']::-webkit-slider-runnable-track {
-        height: 10px;
-        -webkit-appearance: none;
-        color: #13bba4;
-        margin-top: -1px;
-    }
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: -1px;
+  }
 
-    input[type='range']::-webkit-slider-thumb {
-        width: 10px;
-        -webkit-appearance: none;
-        height: 10px;
-        cursor: ew-resize;
-        background: #434343;
-        box-shadow: -80px 0 0 80px #ea9512;
-    }
+  input[type="range"]::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -80px 0 0 80px #ea9512;
+  }
 }
 /** FF*/
-input[type='range']::-moz-range-progress {
-    background-color: #ea9512;
+input[type="range"]::-moz-range-progress {
+  background-color: #ea9512;
 }
-input[type='range']::-moz-range-track {
-    background-color: #9a905d;
+input[type="range"]::-moz-range-track {
+  background-color: #9a905d;
 }
 /* IE*/
-input[type='range']::-ms-fill-lower {
-    background-color: #ea9512;
+input[type="range"]::-ms-fill-lower {
+  background-color: #ea9512;
 }
-input[type='range']::-ms-fill-upper {
-    background-color: #9a905d;
+input[type="range"]::-ms-fill-upper {
+  background-color: #9a905d;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #96a702;
+}
+
+*::-webkit-scrollbar {
+  width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #3b4333;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #96a702;
+  border: 3px solid #96a702;
 }
 
 @media (max-width: 768px) {
-    .text-black-shadow {
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    }
+  .text-black-shadow {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
 }

@@ -1,0 +1,507 @@
+{
+  "skill": [
+    {
+      "name": "Soft Skills",
+      "percentage": "100",
+      "tasks": [
+        {
+          "completed": true,
+          "title": "Ensemble contre le monde",
+          "subtitle": "Terminer la série des quêtes Travail d'equipe",
+          "subtask": [
+            {
+              "taskname": "Effectuer des projets d'équipes de 2 à 4 personnes à Epitech",
+              "completed": true
+            },
+            {
+              "taskname": "Effectuer des projets d'équipes de 4 à 6 personnes à Epitech",
+              "completed": true
+            },
+            {
+              "taskname": "Effectuer des projets d'équipes de 6 à 8 personnes à Epitech",
+              "completed": true
+            },
+            {
+              "taskname": "Travailler avec une équipe de plus de 15 développeurs à Lafourche",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "Porte ta voix au loin",
+          "subtitle": "Terminer la série des quêtes Aisance oral",
+          "subtask": [
+            {
+              "taskname": "Effectuer des codes review oraux devant un public à Epitech",
+              "completed": true
+            },
+            {
+              "taskname": "Effectuer des keynotes de projet à Epitech",
+              "completed": true
+            },
+            {
+              "taskname": "Pitcher son projet de fin d'étude à des entreprises et particuliers",
+              "completed": true
+            },
+            {
+              "taskname": "Vulgariser et faciliter la compréhension de son travail à des collègues ou personnes non tech",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "Un Xélor de qualité",
+          "subtitle": "Terminer la série des quêtes Gestion du temps",
+          "subtask": [
+            {
+              "taskname": "Réaliser plusieurs projets simultanément à Epitech",
+              "completed": true
+            },
+            {
+              "taskname": "Finaliser le projet de son stage de 2ème année plusieurs mois en avance",
+              "completed": true
+            },
+            {
+              "taskname": "Finaliser le projet son stage de 3ème année plusieurs semaines en avance",
+              "completed": true
+            },
+            {
+              "taskname": "Alterner entre part-time et projet de fin d'étude",
+              "completed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hard Skills",
+      "percentage": "100",
+      "tasks": [
+        {
+          "completed": true,
+          "title": "Niveau 0",
+          "subtitle": "Terminer la série des quêtes Programmation bas niveau",
+          "subtask": [
+            {
+              "taskname": "Effectuer des projets C",
+              "completed": true
+            },
+            {
+              "taskname": "Effectuer des projets C++",
+              "completed": true
+            },
+            {
+              "taskname": "Effectuer des projets NASM",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "Niveau 100",
+          "subtitle": "Terminer la série des quêtes Programmation haut niveau",
+          "subtask": [
+            {
+              "taskname": "Effectuer des projets JS",
+              "completed": true
+            },
+            {
+              "taskname": "Effectuer des projets Python",
+              "completed": true
+            },
+            {
+              "taskname": "Effectuer des projets React",
+              "completed": true
+            },
+            {
+              "taskname": "Effectuer des projets Next",
+              "completed": true
+            },
+            {
+              "taskname": "Matriser tailwindcss",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "Vers des horizons plus lointains que l'horizon lui-même",
+          "subtitle": "Terminer la série des quêtes GIT",
+          "subtask": [
+            {
+              "taskname": "Créer une branche git depuis la master/main",
+              "completed": true
+            },
+            {
+              "taskname": "Créer un commit sur une branche",
+              "completed": true
+            },
+            {
+              "taskname": "Effectuer un push de son travail sur une branche",
+              "completed": true
+            },
+            {
+              "taskname": "Effectuer un rebase de branche",
+              "completed": true
+            },
+            {
+              "taskname": "Renommer une branche",
+              "completed": true
+            },
+            {
+              "taskname": "Supprimer une branche",
+              "completed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Langues",
+      "percentage": "100",
+      "tasks": [
+        {
+          "completed": true,
+          "title": "La France aux français",
+          "subtitle": "Terminer la série des quêtes Baguette",
+          "subtask": [
+            {
+              "taskname": "Langue native",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "Toujours autant de pluie chez moi",
+          "subtitle": "Terminer la série des quêtes Cup of tea",
+          "subtask": [
+            {
+              "taskname": "855/990 Tepitech (équivalent TOIEC à Epitech)",
+              "completed": true
+            },
+            {
+              "taskname": "Compréhension auditive",
+              "completed": true
+            },
+            {
+              "taskname": "Communiquer en anglais",
+              "completed": true
+            },
+            {
+              "taskname": "Travailler en anglais",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "Ein expert en saucisse",
+          "subtitle": "Terminer la série des Deutsche Qualität",
+          "subtask": [
+            {
+              "taskname": "Allemand niveau bac",
+              "completed": true
+            },
+            {
+              "taskname": "Echange linguistique en Allemagne",
+              "completed": true
+            },
+            {
+              "taskname": "Echange linguistique en Autriche",
+              "completed": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "name": "Lafourche",
+      "percentage": "50",
+      "tasks": [
+        {
+          "completed": true,
+          "title": "Part-time septembre 2022 à fevrier 2023",
+          "subtitle": "Terminer la série des quêtes Créer un backoffice",
+          "subtask": [
+            {
+              "taskname": "Mise en place de graphql",
+              "completed": true
+            },
+            {
+              "taskname": "Linker 5 API interne",
+              "completed": true
+            },
+            {
+              "taskname": "Mettre en place la logique métier",
+              "completed": true
+            },
+            {
+              "taskname": "Création de l'UI/UX en nextJS",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": false,
+          "title": "Stage à temps plein mars 2023 à aout 2023",
+          "subtitle": "Terminer la série des quêtes Implémenter et gérer les tickets sur le site ecommerce",
+          "subtask": [
+            {
+              "taskname": "Améliorer l'UX sur le site ecommerce actuel",
+              "completed": false
+            },
+            {
+              "taskname": "Résoudre les problèmes remontés par les utilisateurs",
+              "completed": false
+            },
+            {
+              "taskname": "implémenter de nouvelles features sur le site",
+              "completed": false
+            },
+            {
+              "taskname": "Implémenter de nouvelles features sur le Backoffice",
+              "completed": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Saf France",
+      "percentage": "100",
+      "tasks": [
+        {
+          "completed": true,
+          "title": "Stage à temps plein avril 2021 à juillet 2021",
+          "subtitle": "Terminer la série des quêtes Créer une tombola en ligne",
+          "subtask": [
+            {
+              "taskname": "Créer une tombola en React",
+              "completed": true
+            },
+            {
+              "taskname": "Lier la tombola à une API spécialisé dans les évènements associatif",
+              "completed": true
+            },
+            {
+              "taskname": "Mettre en place une base de donnée pour un projet interne",
+              "completed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CIRAD",
+      "percentage": "100",
+      "tasks": [
+        {
+          "completed": true,
+          "title": "Stage à temps plein juillet 2019 à novembre 2019",
+          "subtitle": "Terminer la série des quêtes Migration de plateforme",
+          "subtask": [
+            {
+              "taskname": "Migrer la plateforme GeoNode vers la version la plus récente",
+              "completed": true
+            },
+            {
+              "taskname": "Apprendre le Django",
+              "completed": true
+            },
+            {
+              "taskname": "Réimplémenter les anciennes features",
+              "completed": true
+            },
+            {
+              "taskname": "Implémenter de nouvelles features",
+              "completed": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "passion": [
+    {
+      "name": "Rugby",
+      "percentage": "100",
+      "tasks": [
+        {
+          "completed": true,
+          "title": "Le monde des XV",
+          "subtitle": "Terminer la série des quêtes Le Trio",
+          "subtask": [
+            {
+              "taskname": "Acquérir le titre Benjamins",
+              "completed": true
+            },
+            {
+              "taskname": "Acquérir le titre Minimes",
+              "completed": true
+            },
+            {
+              "taskname": "Acquérir le titre Cadets",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "A la conquête de la victoire",
+          "subtitle": "Terminer la série des quêtes Rammener la coupe",
+          "subtask": [
+            {
+              "taskname": "Acquérir le titre Champions de la Réunion 2 fois",
+              "completed": true
+            },
+            {
+              "taskname": "Acquérir le titre Champion Orange Rugby Réunion",
+              "completed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Anime",
+      "percentage": "100",
+      "tasks": [
+        {
+          "completed": true,
+          "title": "Otaku au taquet",
+          "subtitle": "Terminer la série des quêtes Encore un",
+          "subtask": [
+            {
+              "taskname": "Lire des scans",
+              "completed": true
+            },
+            {
+              "taskname": "Avoir une liste d'une cinquantaine d'animés",
+              "completed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Guitare",
+      "percentage": "100",
+      "tasks": [
+        {
+          "completed": true,
+          "title": "DOminer l'éveil",
+          "subtitle": "Terminer la série des quêtes Musicalité infantile",
+          "subtask": [
+            {
+              "taskname": "Les débuts de la musique 6-8 ans",
+              "completed": true
+            },
+            {
+              "taskname": "Choisir son instruments",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "RÉpondre à l'appel de la musique",
+          "subtitle": "Terminer la série des quêtes Premiers pas",
+          "subtask": [
+            {
+              "taskname": "Apprendre la guitare avec son père",
+              "completed": true
+            },
+            {
+              "taskname": "Jouer ses premières notes",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "MInimiser la douleur",
+          "subtitle": "Terminer la série des quêtes Heures de tryhard",
+          "subtask": [
+            {
+              "taskname": "Pratiquer pendant des heures",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "FAçonner les compétences",
+          "subtitle": "Terminer la série des quêtes Apprentissage difficile",
+          "subtask": [
+            {
+              "taskname": "Apprendre à lire une partition",
+              "completed": true
+            },
+            {
+              "taskname": "Apprendre à lire une tablature",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "SOLidifier les bases",
+          "subtitle": "Terminer la série des quêtes Pratiquer c'est maîtriser",
+          "subtask": [
+            {
+              "taskname": "Apprendre les accords complexes",
+              "completed": true
+            },
+            {
+              "taskname": "Se remettre à la théorie",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "LAsser de l'instrument",
+          "subtitle": "Terminer la série des quêtes Perdre l'envie",
+          "subtask": [
+            {
+              "taskname": "Faire une pause de plusieurs années de guitare",
+              "completed": true
+            },
+            {
+              "taskname": "Oublier la théorie",
+              "completed": true
+            },
+            {
+              "taskname": "Jouer que quelques fois par mois",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "completed": true,
+          "title": "Silonner de nouveaux horizons",
+          "subtitle": "Terminer la série des quêtes Le retour en rythme",
+          "subtask": [
+            {
+              "taskname": "Reprendre la guitare sérieusement",
+              "completed": true
+            },
+            {
+              "taskname": "Découvrir le monde du jazz manouche",
+              "completed": true
+            },
+            {
+              "taskname": "Se passionner pour le jazz",
+              "completed": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
