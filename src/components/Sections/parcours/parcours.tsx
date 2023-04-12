@@ -11,7 +11,7 @@ const Parcours = React.forwardRef<HTMLElement>((_, ref) => {
       <h1 className="text-primary_dofus uppercase font-bebas text-5xl md:text-7xl">
         mon parcours
       </h1>
-      <div className=" flex flex-col items-center absolute top-1/4 translate-y-4">
+      <div className=" flex flex-col items-center absolute top-1/4 lg:top-1/4 md:top-1/2 md:-translate-y-1/2 lg:translate-y-4">
         <p className="text-primary_dofus text-2xl md:text-4xl  uppercase relative font-bebas">
           lycee
         </p>
@@ -24,7 +24,7 @@ const Parcours = React.forwardRef<HTMLElement>((_, ref) => {
           epitech
         </p>
       </div>
-      <div className="relative inset-x-0 h-3/4 md:w-1/3 md:left-40">
+      <div className="relative inset-x-0 h-3/4 md:w-4/5 lg:w-1/3 md:left-40">
         <span className="absolute uppercase right-0 md:left-0 text-base md:text-xl top-1/4 -translate-y-20 font-semibold w-2/3 text-white">
           Bac scientifique specialite physique/chimie au lycee Antoine de
           saint-exupery a l'ile de la Reunion

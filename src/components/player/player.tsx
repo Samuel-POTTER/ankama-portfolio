@@ -1,10 +1,10 @@
-import DofusSong from "assets/dofus.mp3";
+import DOFUS_SONG from "assets/dofus.mp3";
 import { useEffect, useState } from "react";
 
 import { FaPause, FaPlay } from "react-icons/fa";
 
 const Player = () => {
-  const [song] = useState(new Audio(DofusSong));
+  const [song] = useState(new Audio(DOFUS_SONG));
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState("1");
 
@@ -17,19 +17,19 @@ const Player = () => {
   }, [volume, song]);
 
   return (
-    <div className="flex items-center absolute right-1/3 top-1/2 z-50 -translate-y-1/2 space-x-2">
+    <div className="flex items-center absolute right-1/3 left-2/3 lg:right-0 top-1/2 z-50 md:-translate-x-2 lg:-translate-x-0 -translate-y-1/2 space-x-2">
       {!isPlaying ? (
         <FaPlay
           className="text-orange_dofus text-2xl cursor-pointer"
           onClick={() => {
-            setIsPlaying(!isPlaying);
+            setIsPlaying((prev) => !prev);
           }}
         />
       ) : (
         <FaPause
           className="text-orange_dofus text-2xl cursor-pointer"
           onClick={() => {
-            setIsPlaying(!isPlaying);
+            setIsPlaying((prev) => !prev);
           }}
         />
       )}

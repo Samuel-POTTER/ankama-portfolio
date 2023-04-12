@@ -18,17 +18,21 @@ const Success = ({ task }: ISuccessProps) => {
         } w-full flex justify-between text-start items-center px-2 py-3 border border-[#23291e]`}
       >
         <div className="space-x-4 flex items-center">
-          <img src={Trophy} alt="trophy_dofus" width={80} height={80} />
+          <img
+            src={Trophy}
+            alt="trophy_dofus"
+            className="md:w-20 md:h-20 w-10 h-10"
+          />
           <div
             className={`${
               task.completed ? "text-white" : "text-white_dofus"
             } space-y-3`}
           >
-            <p className="font-bold text-lg">{task.title}</p>
+            <p className="font-bold md:text-lg">{task.title}</p>
             <p>{task.subtitle}</p>
           </div>
         </div>
-        <div className="mr-6">
+        <div className="mr-6 hidden md:block">
           <span className="px-5 py-2 bg-[#1e221a] text-white_dofus">100</span>
         </div>
       </button>
